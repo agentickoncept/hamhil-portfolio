@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - HAHMHIL | Professional Cellist | Dubai</title>
+    <meta name="description" content="Explore the visual journey of HAHMHIL through our stunning gallery of performances, behind-the-scenes moments, and artistic photography.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <img src="assets/logo.svg" alt="HAHMHIL" class="preloader-logo">
+            <div class="preloader-text">Loading Gallery...</div>
+            <div class="preloader-progress">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="HAHMHIL Logo" class="nav-logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="performances.html" class="nav-link">Performances</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="collaborate.html" class="nav-link nav-cta">Collaborate</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-image-container">
+            <img src="imgs/cello_artistic_1.jpg" alt="Gallery" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Visual Journey</h1>
+            <p class="hero-subtitle">Moments captured in time</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="performances">Performances</button>
+                <button class="filter-btn" data-filter="behind-scenes">Behind the Scenes</button>
+                <button class="filter-btn" data-filter="instruments">Instruments</button>
+                <button class="filter-btn" data-filter="venues">Venues</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="masonry-grid" id="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item" data-category="performances">
+                    <img src="imgs/cello_artistic_1.jpg" alt="Dubai Opera Performance" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Dubai Opera Performance</h3>
+                        <p>Bach's Cello Suite No. 1</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">March 2025</span>
+                            <span class="gallery-venue">Dubai Opera</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-category="instruments">
+                    <img src="imgs/cello_artistic_0.jpg" alt="The Cello" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>The Instrument</h3>
+                        <p>Close-up of my cello in natural lighting</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">Studio Session</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="venues">
+                    <img src="imgs/concert_background_4.jpg" alt="Grand Hall Performance" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Grand Hall Performance</h3>
+                        <p>Emirates Palace Concert Hall</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">January 2025</span>
+                            <span class="gallery-venue">Emirates Palace</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide" data-category="performances">
+                    <img src="imgs/concert_background_5.jpg" alt="Chamber Concert" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Chamber Music Evening</h3>
+                        <p>Intimate performance with chamber ensemble</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">December 2024</span>
+                            <span class="gallery-venue">Chamber Music Society</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="instruments">
+                    <img src="imgs/cello_artistic_6.jpeg" alt="Artist Portrait" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Artist Portrait</h3>
+                        <p>Behind the scenes portrait session</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">Studio Session</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="behind-scenes">
+                    <img src="imgs/hero_background_5.jpg" alt="Concert Hall Setup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Concert Hall Setup</h3>
+                        <p>Preparing for the evening performance</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">March 2025</span>
+                            <span class="gallery-venue">Dubai Opera</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="performances">
+                    <img src="imgs/concert_background_3.jpg" alt="Solo Recital" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Solo Recital</h3>
+                        <p>Intimate solo cello performance</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">November 2024</span>
+                            <span class="gallery-venue">ADNEC Centre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="behind-scenes">
+                    <img src="imgs/hero_background_8.jpg" alt="Practice Session" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Practice Session</h3>
+                        <p>Behind the scenes preparation</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">Studio Practice</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-category="inspiration">
+                    <img src="imgs/cello_logo_inspiration_2.jpg" alt="Classical Heritage" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Classical Heritage</h3>
+                        <p>Inspiration from classical design</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">Design Inspiration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="inspiration">
+                    <img src="imgs/cello_logo_inspiration_4.jpg" alt="Musical Excellence" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Musical Excellence</h3>
+                        <p>Where artistry meets precision</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">Design Philosophy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide" data-category="inspiration">
+                    <img src="imgs/cello_logo_inspiration_5.jpg" alt="Creative Innovation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Creative Innovation</h3>
+                        <p>Modern interpretation of classical forms</p>
+                        <div class="gallery-meta">
+                            <span class="gallery-date">Brand Evolution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <button class="lightbox-nav prev" id="lightbox-prev">&#8249;</button>
+            <img id="lightbox-image" src="" alt="">
+            <button class="lightbox-nav next" id="lightbox-next">&#8250;</button>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <div id="lightbox-meta"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Want to Capture Your Event?</h2>
+                <p class="cta-subtitle">Let's create something beautiful together</p>
+                <div class="cta-actions">
+                    <a href="collaborate.html" class="btn-primary">Start Collaboration</a>
+                    <a href="contact.html" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="HAHMHIL Logo" class="footer-logo">
+                    <p class="footer-tagline">Where Passion Meets Perfection</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="performances.html">Performances</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="collaborate.html">Collaborate</a></li>
+                            <li><a href="mailto:contact@hahmhil.com">contact@hahmhil.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HAHMHIL. All rights reserved.</p>
+                <p>Designed by MiniMax Agent</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>
